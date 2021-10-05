@@ -1,0 +1,68 @@
+body,html 
+    // background-color: #bbbbbb
+
+@mixin flex
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap 
+@mixin trs($ms: 100ms)
+    transition: $ms all ease-in-out
+@mixin h_opa($ms: 100ms)
+    +trs($ms)
+    &:hover
+        opacity: .8
+
+.container
+    width: 100%
+    +flex
+
+// Global
+.cus__sidebar
+    width: 100%
+    max-width: 220px
+    ul
+        margin: 0
+        padding: 0
+        list-style-type: none
+    a
+        display: block
+        color: unset
+        text-decoration: unset
+        +h_opa
+    h3
+        text-align: center
+        color: #555
+.type__image
+    +flex
+    .item
+        +flex
+        box-shadow: border-box
+        margin: 8px
+        padding: 5px
+        border: 1px solid #666
+        width: 80px
+        height: 80px
+    .image
+        max-width: 60px
+    .name
+        display: inline-block
+        width: 100%
+        text-align: center
+
+.type__solid
+    +flex
+    justify-content: start
+    .item
+        +flex
+        box-shadow: border-box
+        margin: 8px
+        padding: 5px
+        border: 1px solid #666
+        width: 80px
+    .image
+        max-width: 60px
+    .name
+        display: inline-block
+        width: 100%
+        text-align: center
