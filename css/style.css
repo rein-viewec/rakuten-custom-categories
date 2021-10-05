@@ -41,6 +41,11 @@
   opacity: .8;
 }
 
+.cus__sidebar a:hover {
+  color: #ee7d86;
+  text-decoration: underline;
+}
+
 .cus__sidebar h3 {
   text-align: center;
   color: #555;
