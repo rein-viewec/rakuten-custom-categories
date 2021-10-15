@@ -46,9 +46,11 @@
   text-decoration: underline;
 }
 
-.cus__sidebar h3 {
+.cus__sidebar h4 {
   text-align: center;
+  font-size: 18px;
   color: #555;
+  margin: 20px 0 10px 0;
 }
 
 .cus__sidebar .type__image {
