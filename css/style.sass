@@ -36,38 +36,37 @@ body,html
     h3
         text-align: center
         color: #555
-.type__image
-    +flex
-    .item
+    .type__image
         +flex
-        box-shadow: border-box
-        margin: 8px
-        padding: 5px
-        border: 1px solid #666
-        width: 80px
-        height: 80px
-    .image
-        max-width: 54px
-        padding: 2px
-    .name
-        margin: 4px 0 0 0
-        display: inline-block
-        width: 100%
-        text-align: center
-
-.type__solid
-    +flex
-    justify-content: start
-    .item
+        .item
+            +flex
+            box-shadow: border-box
+            margin: 8px
+            padding: 5px
+            border: 1px solid #666
+            width: 80px
+            height: 80px
+        .image
+            max-width: 54px
+            padding: 2px
+        .name
+            margin: 4px 0 0 0
+            display: inline-block
+            width: 100%
+            text-align: center
+    .type__solid
         +flex
-        box-shadow: border-box
-        margin: 8px
-        padding: 5px
-        border: 1px solid #666
-        width: 80px
-    .image
-        max-width: 60px
-    .name
-        display: inline-block
-        width: 100%
-        text-align: center
+        justify-content: start
+        .item
+            +flex
+            box-shadow: border-box
+            margin: 8px
+            padding: 5px
+            border: 1px solid #666
+            width: 80px
+        .image
+            max-width: 60px
+        .name
+            display: inline-block
+            width: 100%
+            text-align: center
