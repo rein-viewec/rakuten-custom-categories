@@ -1,22 +1,3 @@
-.cus__container {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-}
-
 .cus__sidebar {
   width: 100%;
   max-width: 220px;
@@ -51,6 +32,7 @@
   display: block;
   color: unset;
   text-decoration: unset;
+  width: 100%;
   -webkit-transition: 100ms all ease-in-out;
   -o-transition: 100ms all ease-in-out;
   transition: 100ms all ease-in-out;
@@ -68,7 +50,7 @@
 .cus__sidebar h4 {
   text-align: center;
   font-size: 18px;
-  color: #555;
+  color: #E38288 !important;
   margin: 20px 0 10px 0;
 }
 
@@ -141,4 +123,20 @@
   display: inline-block;
   width: 100%;
   text-align: center;
+}
+
+@media (max-width: 700px) {
+  .cus__sidebar {
+    width: 100%;
+    max-width: unset;
+  }
+  .cus__sidebar ul {
+    -webkit-box-pack: start;
+    -webkit-justify-content: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .type__solid .item {
+    width: 33%;
+  }
 }
